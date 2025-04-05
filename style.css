@@ -1,0 +1,160 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Futura', sans-serif;
+  background: url('https://images.unsplash.com/photo-1603437873662-dc1f44901825?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+  background-size: cover;
+  color: #ffffff;
+  height: 100vh;
+  overflow: auto;
+}
+
+#app {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+input, select {
+  font-family: 'Futura', sans-serif;
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  backdrop-filter: blur(10px);
+}
+
+button {
+  font-family: 'Futura', sans-serif;
+  padding: 0.7rem 1.2rem;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+#weather {
+  font-family: 'Futura', sans-serif;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 2rem;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 800px;
+}
+
+.tab {
+  display: none;
+  margin-top: 1rem;
+}
+
+.tab.active {
+  display: block;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tabs button {
+  font-size: 1rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#forecast div {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+#forecast img, #tab-current img {
+  width: 48px;
+  height: 48px;
+  margin-top: 0.5rem;
+}
+
+#tab-current h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+#tab-current p, #tab-forecast p {
+  font-size: 1rem;
+  margin: 0.2rem 0;
+}
+
+#defaultCityDisplay {
+  margin-bottom: 1rem;
+  color: #fff;
+  font-style: italic;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .controls {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  #weather {
+    padding: 1rem;
+  }
+
+  .tabs {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  #tab-current h2 {
+    font-size: 1.5rem;
+  }
+
+  #tab-current p, #tab-forecast p {
+    font-size: 0.9rem;
+  }
+
+  button, input, select {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body, html {
+    font-size: 14px;
+  }
+
+  .controls {
+    flex-direction: column;
+  }
+
+  #weather {
+    width: 95%;
+  }
+}

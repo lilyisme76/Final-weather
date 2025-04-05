@@ -1,0 +1,22 @@
+{
+  "languages": {
+    "en": {
+      "humidity": "Humidity",
+      "temperature": "Temperature",
+      "weather": "Weather",
+      "search": "Search",
+      "forecast": "5-Day Forecast",
+      "notFound": "City not found",
+      "defaultCity": "Default city"
+    },
+    "ko": {
+      "humidity": "습도",
+      "temperature": "온도",
+      "weather": "날씨",
+      "search": "검색",
+      "forecast": "5일 예보",
+      "notFound": "도시를 찾을 수 없습니다",
+      "defaultCity": "기본 도시"
+    }
+  }
+}
